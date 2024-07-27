@@ -1,0 +1,35 @@
+.image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.image_container {
+    position: relative;
+    padding: 0;
+    margin: 10px;
+}
+
+.icon_remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: rgba(252, 252, 252, 0.8);
+    color: black;
+    border-radius: 10%;
+    display: flex;
+    gap : 5px;
+    align-items: center;
+    padding: 5px;
+}
+
+.form_activity_container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(139, 50, 44, 0.2), 0 6px 20px 0 rgba(139, 50, 44, 0.19);
+    color: #FF6868;
+    padding : 2rem;
+}
+

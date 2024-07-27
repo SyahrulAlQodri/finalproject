@@ -1,0 +1,56 @@
+.banner img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+
+}
+
+.banner img:hover {
+    transform: scale(1.5);
+}
+
+.banner-item{
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    margin: auto;
+    padding: 5px 2%;
+}
+
+.banner h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    font-weight: 400;
+    background-color: #000;
+    padding: 10px;
+    margin: 0 25%;
+    border-radius:20px;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 800px) {
+    .banner h3 {
+        display: none;
+    }
+
+    .banner img {
+        aspect-ratio:1;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,83 @@
+.sidebar {
+    height: 100vh;
+    width: 150px;
+    background-color: #FFBB70;
+    border-right: 1px solid #dee2e6;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+
+
+.list-group-item {
+    background-color: #FFEC9E;
+    border-color: #FFBB70;
+    position: relative;
+    padding: 15px;
+}
+
+.btn-dashboard {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    padding: 15px;
+    background-color: #FFEC9E;
+
+}
+
+.dashboard-header {
+    position: relative;
+    padding: 15px;
+}
+
+.hideSidebar {
+    transform: translate(-100%, 0);
+    transition: all 0.5s ease;
+}
+
+.showSidebar {
+    transform: translate(0, 0);
+    transition: all 0.5s ease;
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    right: -45px;
+    cursor: pointer;
+    z-index: 100;
+    background-color: #FFBB70; 
+    border-radius: 10%;
+    padding: 15px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        transform: translate(-100%, 0);
+        transition: all 0.5s ease;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .btn-dashboard {
+         right: -45px;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+}

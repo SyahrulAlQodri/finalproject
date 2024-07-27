@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: #FFFBDA;
+    overflow-x: hidden;
+}
+
+.text-orange {
+    color :#ED9455;
+}
+
+.orange-dark {
+    color: #e34d00;
+}
+
+
+.background-orange {
+    background-color: #ED9455;
+}
+
+.default-button {
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+}
+
+.default-button:hover {
+    box-shadow: none;
+    translate: 0 2px;
+}
+
+.btn-gray {
+    background-color: #D0D0D0;
+    color: #343434;
+}
+
+.card {
+    transition: ease-in-out 0.4s;
+}
+
+
+.card:hover {
+    box-shadow: none;
+    translate: 0 -10px;
+    transition: all 0.1s ease;
+}
+
+
+
+.btn-orange {
+    /* background-color: #ED9455; */
+    background-image: linear-gradient(to bottom right, #ED9455, #e38400);
+    color: white;
+}
+
+.button-create {
+    cursor: pointer;
+    background-color: #FFBB70;
+    color: #8B322C;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s ease;
+}
+
+.button-create:hover {
+    translate: 4px 2px;
+    box-shadow: none;
+}
+
+
+.button-icon-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button-icon {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+}
+
+
+.btn-edit {
+    color: #0D1282;
+    background-color: #EEEDED;
+    border: 1px solid #0D1282;
+
+}
+
+.btn-edit:hover {
+ translate: 0 4px;
+ box-shadow: none; 
+}
+
+.btn-delete {
+    color: #D71313;
+    background-color: #EEEDED;
+    border: 1px solid #D71313;
+}
+
+.btn-delete:hover {
+ translate: 0 4px;
+ box-shadow: none;
+}
+
+.modal_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.modal_dialog {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: all 0.3s ease;
+    transform: translate(0%,-100%);
+    transition: all 0.4s;
+}
+
+.hide_modal {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .show_modal {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(0%,0%);
+  }
+
+  .show_dialog {
+    transform: translate(0%,0%);
+  }
+  
+  .hide_dialog {
+    transform: translate(0%,-100%);
+  }
