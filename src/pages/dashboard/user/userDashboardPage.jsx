@@ -58,17 +58,17 @@ export default function UserDashboardPage() {
       <ModalUpdateRole user={user} onConfirm={updateRole} />
       <div className="mt-5 container-lg">
         <div className="py-5">
-          <div className="d-sm-flex justify-content-between align-items-center m-3">
-            <h1 className="text-center mb-3 text-orange">
+          <div className="m-3 d-sm-flex justify-content-between align-items-center">
+            <h1 className="mb-3 text-center text-orange">
               <i className="bi bi-person-circle me-2"></i>User Data
             </h1>
-            <div className="mx-lg-0 mx-5 ">
+            <div className="mx-5 mx-lg-0 ">
               <SearchInput placeholder="Search User" onChange={handleSearch} />
             </div>
           </div>
           <div className="row justify-content-center">
             {filteredUsers.slice(startIndex, endIndex).map((user, index) => (
-              <div className="col-10 col-md-4 col-lg-3  " key={user.id}>
+              <div className="col-10 col-md-4 col-lg-3 " key={user.id}>
                 <CardUser
                   user={user}
                   index={index}

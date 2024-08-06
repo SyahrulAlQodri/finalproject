@@ -19,10 +19,10 @@ function Footer() {
           <div className="col-md-4">
             <h5>Contact Us</h5>
             <address className="text-muted">
-              <p className="mb-0">123 Travel Street</p>
-              <p className="mb-0">City, Country</p>
+              <p className="mb-0">Jl. Jend. Sudirman No.13</p>
+              <p className="mb-0">Yogyakarta, Indonesia</p>
               <p className="mb-0">Email: info@example.com</p>
-              <p className="mb-0">Phone: +1234567890</p>
+              <p className="mb-0">Phone: +01234567890</p>
             </address>
           </div>
           <div className="col-md-4">
@@ -41,6 +41,11 @@ function Footer() {
               <li className="pb-1">
                 <a href="#" className="text-decoration-none text-muted">
                   <i className="bi bi-instagram me-2"></i>Instagram
+                </a>
+              </li>
+              <li className="pb-1">
+                <a href="#" className="text-decoration-none text-muted">
+                  <i className="bi bi-whatsapp me-2"></i>Whatsapp
                 </a>
               </li>
             </ul>

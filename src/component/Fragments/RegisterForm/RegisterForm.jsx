@@ -101,8 +101,8 @@ export default function RegisterForm({ onSubmit }) {
 
   return (
     <div className="container-fluid register_form">
-    <h1>Register</h1>
-    <p>Please input your data </p>
+    <h1 className="text-white">Register</h1>
+    <p className="text-white">Please input your data </p>
     <form onSubmit={handleSubmit}>
       <div className="row">
         <div
@@ -118,10 +118,7 @@ export default function RegisterForm({ onSubmit }) {
             <Input name="name" id="name" placeholder="Full Name" />
             <Label htmlFor="email">Full Name</Label>
           </div>
-          <CheckBox
-            id={"showPassword"}
-            onClick={() => setShowPassword(!showPassword)}
-          >
+          <CheckBox id={"showPassword"} onClick={() => setShowPassword(!showPassword)}>
             Show Password
           </CheckBox>
           <div className="mb-3 form-floating">
@@ -193,7 +190,7 @@ export default function RegisterForm({ onSubmit }) {
       <button
         type="button"
         className={`btn-next-form default-button me-3 ${
-          section === 1 ? " btn-blue" : "btn-red"
+          section === 1 ? " btn-orange" : "btn-red"
         }`}
         onClick={() => changeSection()}
       >
@@ -212,7 +209,7 @@ export default function RegisterForm({ onSubmit }) {
     <p className="mt-3 fs-5">
       Already have an account?{" "}
       <Link to="/login" className="text-decoration-none text-info fw-bold">
-        Login here
+        Login
       </Link>
     </p>
   </div>
